@@ -37,3 +37,31 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+const themeToggleBtn = document.querySelector('.theme-toggler');
+const calculator = document.querySelector('.calculator');
+const toggleIcon = document.querySelector('.toggler-icon');
+const close = document.getElementById('close');
+const modal_container = document.getElementById('modal-container');
+const open = document.getElementById('open');
+
+let isDark = true;
+
+themeToggleBtn.onclick = () => {
+    calculator.classList.toggle('dark');
+    themeToggleBtn.classList.toggle('active');
+    isDark = !isDark;
+    if (isDark)
+        themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon mr"></i>';
+    else
+        themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun mr"></i>';
+};
+
+open.addEventListener('click', () => {
+    modal_container.classList.add('show');
+    document.body.classList.add('opacity');
+});
+
+close.addEventListener('click', () => {
+    modal_container.classList.remove('show');
+    document.body.classList.remove('opacity');
+});
