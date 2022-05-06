@@ -121,3 +121,162 @@ button#equal {
     font-weight: bolder;
 }
 
+/* light theme */
+
+.calculator {
+    background-color: #fff;
+}
+
+.calculator #display {
+    color: #0a1e23;
+}
+
+.calculator button#clear {
+    background-color: #ffd5d8;
+    color: #fc4552;
+}
+
+.calculator button.btn-number {
+    background-color: #c3eaff;
+    color: #000;
+}
+
+.calculator button.btn-operator {
+    background-color: #ffd0fd;
+    color: #f967f3;
+}
+
+.calculator button.btn-equal {
+    background-color: #adf9e7;
+    color: #000;
+}
+
+/* dark theme */
+
+.calculator.dark {
+    background-color: #071115;
+}
+
+.calculator.dark #display {
+    color: #f8fafd;
+}
+
+.calculator.dark button#clear {
+    background-color: #2d191e;
+    color: #bd3740;
+}
+
+.calculator.dark button.btn-number {
+    background-color: #1b2f38;
+    color: #f8fafb;
+}
+
+.calculator.dark button.btn-operator {
+    background-color: #2e1f39;
+    color: #aa00a4;
+}
+
+.calculator.dark button.btn-equal {
+    background-color: #222333;
+    color: #ffffff;
+}
+
+/* Help Popup */
+
+.modal-container {
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease;
+}
+
+.modal {
+    position: relative;
+    width: 60%;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffd0fd;
+    color: #000;
+}
+
+.close-help {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.modal {
+    border: 2px solid black;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#help-tips {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.tip {
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    padding: 10px 0;
+}
+
+#que-mark {
+    font-size: 2rem;
+}
+
+/* Utility classes */
+
+.b_shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.mb_30 {
+    margin-bottom: 30px;
+}
+
+.r_clr {
+    color: red;
+}
+
+.b_clr {
+    color: black;
+}
+
+.bck_black {
+    background-color: #2d191e;
+    color: #bd3740;
+}
