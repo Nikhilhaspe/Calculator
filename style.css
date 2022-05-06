@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1), rgba(210, 53, 165, 1));
+}
+
+#help-icon {
+    position: absolute;
+    top: 90vh;
+    right: 0vw;
+    background-color: transparent;
+    height: 10%;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggler.active {
+    color: #333;
+}
+
+.theme-toggler.active::before {
+    background-color: #fff;
+}
+
+.theme-toggler::before {
+    content: '';
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: #333;
+    z-index: -1;
+}
+
+.mr {
+    margin-right: 33px;
+}
