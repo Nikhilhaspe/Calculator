@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon using fontawesome -->
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="fa-solid fa-moon mr"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear">
+                                <i class="fa-solid fa-c"></i>
+                            </button></td>
+                        <td><button class="btn-operator" id="/">
+                                <i class="fa-solid fa-divide"></i>
+                            </button></td>
+                        <td><button class="btn-operator" id="*">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button></td>
+                        <td><button class="btn-operator" id="backspace">
+                                <i class="fa-solid fa-delete-left"></i>
+                            </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="7">
+                                <i class="fa-solid fa-7"></i>
+                            </button></td>
+                        <td><button class="btn-number" id="8">
+                                <i class="fa-solid fa-8"></i>
+                            </button></td>
+                        <td><button class="btn-number" id="9">
+                                <i class="fa-solid fa-9"></i>
+                            </button></td>
+                        <td><button class="btn-operator" id="-">
+                                <i class="fa-solid fa-minus"></i>
+                            </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="4">
+                                <i class="fa-solid fa-4"></i>
+                            </button></td>
+                        <td><button class="btn-number" id="5">
+                                <i class="fa-solid fa-5"></i>
+                            </button></td>
+                        <td><button class="btn-number" id="6">
+                                <i class="fa-solid fa-6"></i>
+                            </button></td>
+                        <td><button class="btn-operator" id="+">
+                                <i class="fa-solid fa-plus"></i>
+                            </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="1">
+                                <i class="fa-solid fa-1"></i>
+                            </button></td>
+                        <td><button class="btn-number" id="2">
+                                <i class="fa-solid fa-2"></i>
+                            </button></td>
+                        <td><button class="btn-number" id="3">
+                                <i class="fa-solid fa-3"></i>
+                            </button></td>
+                        <td rowspan="2"><button class="btn-equal" id="equal">
+                                <i class="fa-solid fa-equals"></i>
+                            </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="(">
+                                <span class="bracestyling">(</span>
+                            </button></td>
+                        <td><button class="btn-number" id="0">
+                                <i class="fa-solid fa-0"></i>
+                            </button></td>
+                        <td><button class="btn-operator" id=")">
+                                <span class="bracestyling">)</span>
+                            </button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="help-icon">
+            <button id="open" class="b_shadow bck_black">
+                <span id="que-mark">?</span>
+            </button>
+        </div>
+
+        <!-- Help Popup -->
+        <div class="modal-container" id="modal-container">
+            <div class="modal b_shadow">
+                <h2 class="mb_30">How to use?</h2>
+                <div id="close" class="close-help">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div id="help-tips">
+                    <p class="tip">
+                        1. You can use keyboard buttons to give input as well.
+                    </p>
+                    <p class="tip">
+                        2. C for clearing history.
+                    </p>
+                    <p class="tip">
+                        3. 0 - 9 for numbers.
+                    </p>
+                    <p class="tip">
+                        4. . for decimal point.
+                    </p>
+                    <p class="tip">
+                        5. Backspace for clearing last digit.
+                    </p>
+                    <p class="tip">
+                        6. Enter to calculate result.
+                    </p>
+                    <p class="tip">
+                        7. All operators (+, -, *, /).
+                    </p>
+                </div>
+                <div class="footer">
+                    <p>Made With <span class="r_clr">❤</span> by
+                        <a href="https://www.linkedin.com/in/nick-haspe" target="_blank" class="b_clr">Nick</a>
+                    </p>
+                    <p>Star ⭐ Me on
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fa-brands fa-github b_clr"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Java Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
