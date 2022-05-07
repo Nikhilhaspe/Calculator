@@ -5,7 +5,7 @@ A Calculator App with dark mode. Built using HTML, CSS and JavaScript. Feel free
 
 ## Demo
 
-![gameplay.gif](https://github.com/Nikhilhaspe/Alien-Invasion-Game/blob/master/Images/gameplay.gif)
+![gameplay.gif](https://github.com/Nikhilhaspe/Calculator/commit/3e10a58c391e798660f00ce551021930eecc77e7#diff-994473782b06060d6b6085733b32ebe7fdac0cd8672c0ce28d12f1a330782278)
 ## Controls
 
 There are total two ways to interact with calculator: -
