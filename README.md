@@ -10,22 +10,17 @@ A Calculator App with dark mode. Built using HTML, CSS and JavaScript. Feel free
 
 There are total two ways to interact with calculator: -
 
-    1.  Interactive GUI :
+* Interactive GUI :
+
+* Keyboard Input :
+    * Use numerical keys to give input.
+    * Use operator keys to give input.
+    * Use decimal point to give decimal point.
+    * Use c key to clear current output.
+    * Use backspace to clear one recently added symbol.
+    * Hit enter after the valid expression so that it prints final result.
     
-    2.  Keyboard Input :
-
-        i.  Use numerical keys to give input.
         
-        ii. Use operator keys to give input.
-
-        iii. Use decimal point to give decimal point.
-
-        iv. Use c key to clear current output.
-
-        v. Use backspace to clear one recently added symbol.
-
-        vi. Hit enter after the valid expression so that it prints 
-        final result.
 ## Live Demo
 
 See Live Demo [ Here ](https://www.google.in)
