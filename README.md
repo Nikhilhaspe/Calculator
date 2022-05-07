@@ -23,4 +23,4 @@ There are total two ways to interact with calculator: -
         
 ## Live Demo
 
-See Live Demo [ Here ](https://www.google.in)
+See Live Demo [ Here ](https://nikhilhaspe.github.io/Calculator/)
